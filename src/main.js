@@ -1,11 +1,19 @@
-console.log('Hello World!');
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+
+
+import App from './components/app';
+import reducers from './reducers';
+
+const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
-    React.createElement(Counter),
-    document.getElementById('mount')
-  );
+    <Provider store={createStoreWithMiddleware(reducers)}>
+    <App />
+    </Provider>
+    , document.getElementById('mount'));
+  // telling React where to render App
 });
