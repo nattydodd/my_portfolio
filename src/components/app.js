@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import WebsiteList from '../containers/website-list';
 import WebsiteDetail from '../containers/website-detail';
 import VideoList from '../containers/video-list';
+import VideoDetail from '../containers/video-detail';
 
 
 export default class App extends Component {
@@ -15,6 +16,7 @@ export default class App extends Component {
         </div>
         <div className="row">
           <VideoList />
+          <VideoDetail />
         </div>
       </div>
     );

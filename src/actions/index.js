@@ -6,3 +6,10 @@ export function selectWebsite(website) {
     payload: website
   };
 }
+
+export function selectVideo(video) {
+  return {
+    type: 'VIDEO_SELECTED',
+    payload: video
+  };
+}
