@@ -20,9 +20,11 @@ class WebsiteList extends Component {
 
   render() {
     return (
-      <ul className="list-group col-sm-4">
-        {this.renderList()}
-      </ul>
+        <div className="col-sm-6">
+          <ul className="list-group">
+            {this.renderList()}
+          </ul>
+        </div>
     )
   }
 }
