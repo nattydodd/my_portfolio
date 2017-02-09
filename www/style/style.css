@@ -1,9 +1,15 @@
 .laptops {
-  max-width: 800px;
+  max-width: 750px;
+  margin-left: 50px;
 }
 
 li {
   list-style-type: none;
+}
+
+.website {
+  padding-top: 120px;
+  /*color: #bbbbbb;*/
 }
 
 .website-list-item {
@@ -20,9 +26,6 @@ li {
   text-align: center;
 }
 
-.description {
-  margin: 50px;
-}
 
 .padded {
   margin: 20px;
@@ -30,4 +33,18 @@ li {
 
 section {
   height: 100vh;
+}
+
+.page-wrapper {
+  padding: 0 !important;
+}
+
+.topnav-items {
+  padding: 20px;
+}
+
+.topNav {
+  padding-top: 20px !important;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
 }
