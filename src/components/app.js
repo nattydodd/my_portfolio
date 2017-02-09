@@ -10,14 +10,18 @@ export default class App extends Component {
   render() {
     return (
       <div className="container">
-        <div className="row">
-          <WebsiteList />
-          <WebsiteDetail />
-        </div>
-        <div className="row">
-          <VideoList />
-          <VideoDetail />
-        </div>
+        <section>
+          <div className="row">
+            <WebsiteList />
+            <WebsiteDetail />
+          </div>
+        </section>
+        <section>
+          <div className="row">
+            <VideoList />
+            <VideoDetail />
+          </div>
+        </section>
       </div>
     );
   }

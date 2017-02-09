@@ -7,12 +7,12 @@ class WebsiteList extends Component {
   renderList() {
     return this.props.websites.map((website) => {
       return (
-        <li
+        <span
           key={website.title}
           onClick={() => this.props.selectWebsite(website)}
-          className="list-group-item">
+          className="website-list-item">
           {website.title}
-        </li>
+        </span>
       );
     });
   }
@@ -20,10 +20,8 @@ class WebsiteList extends Component {
 
   render() {
     return (
-        <div className="col-sm-6">
-          <ul className="list-group">
+        <div className="col-sm-12 website-list">
             {this.renderList()}
-          </ul>
         </div>
     )
   }

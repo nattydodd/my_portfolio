@@ -1,0 +1,33 @@
+.laptops {
+  max-width: 800px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.website-list-item {
+  margin: 30px;
+  text-align: center;
+}
+
+.website-list-item:hover {
+  cursor:pointer;
+}
+
+.website-list {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.description {
+  margin: 50px;
+}
+
+.padded {
+  margin: 20px;
+}
+
+section {
+  height: 100vh;
+}
