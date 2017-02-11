@@ -4,7 +4,8 @@ import WebsiteList from '../containers/website-list';
 import WebsiteDetail from '../containers/website-detail';
 import VideoList from '../containers/video-list';
 import VideoDetail from '../containers/video-detail';
-import FullpageReact from '../containers/full-page-react'
+import FullpageReact from '../containers/full-page-react';
+import AboutMe from './about-me';
 
 
 export default class App extends Component {
@@ -19,7 +20,9 @@ export default class App extends Component {
           </div>
         </section>
         <section>
-          <div className="row">
+        </section>
+        <section>
+          <div className="row video">
             <VideoList />
             <VideoDetail />
           </div>

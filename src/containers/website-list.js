@@ -3,6 +3,11 @@ import { connect } from 'react-redux';
 import { selectWebsite } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
+// function isActive(website) {
+//   if website
+//   return "active"
+// }
+
 class WebsiteList extends Component {
   renderList() {
     return this.props.websites.map((website) => {
@@ -10,6 +15,8 @@ class WebsiteList extends Component {
         <span
           key={website.title}
           onClick={() => this.props.selectWebsite(website)}
+          onMouseOver={() => this.props.selectWebsite(website)}
+          // className=`${this.isActive(website)}website-list-item`>
           className="website-list-item">
           {website.title}
         </span>

@@ -10,7 +10,7 @@ class VideoDetail extends Component {
 
       return (
         <div className="col-sm-6">
-          <h3>Details for:</h3>
+          <iframe width="560" height="315" src={this.props.video.source} frameborder="0" allowfullscreen></iframe>
           <div>{this.props.video.title}</div>
         </div>
       );

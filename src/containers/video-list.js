@@ -10,7 +10,7 @@ class VideoList extends Component {
         <li
           key={video.title}
           onClick={() => this.props.selectVideo(video)}
-          className="list-group-item">
+          className="video-list-item">
           {video.title}
         </li>
       );
@@ -19,8 +19,8 @@ class VideoList extends Component {
 
     render() {
       return (
-        <div className="col-sm-6">
-          <ul className="list-group">
+        <div className="col-sm-5">
+          <ul>
             {this.renderList()}
           </ul>
         </div>

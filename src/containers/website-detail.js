@@ -11,7 +11,8 @@ class WebsiteDetail extends Component {
                   </div>
                   <div className="col-sm-4 description">
                     <div className="padded">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                      <h3>Share Your Canada</h3>
+                      <p>Show Us Your Canada is an online contest and marketing strategy to promote tourism in the Muskoka Region of Canada. It target expats living abroad, and allows them to upload photos and stories depicting their favourite Muskoka memories. I created this app using Rails and JQuery to allow the users to add Instagram-like filters to their submissions. Users can vote, and each vote is verified using an email verification system as well validated by unique IP address. Submissions are also shareable via Instagram and Twitter.</p>
                     </div>
                     <div>
                       <button className="btn padded">
@@ -29,7 +30,8 @@ class WebsiteDetail extends Component {
           </div>
           <div className="col-sm-4 description">
             <div className="padded">
-              {this.props.website.description}
+              <h3>{this.props.website.title}</h3>
+              <p>{this.props.website.description}</p>
             </div>
             <div>
               <button className="btn padded">

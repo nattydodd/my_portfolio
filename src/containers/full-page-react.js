@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import AboutMe from '../components/about-me';
 
 const {Fullpage, Slide, TopNav, SideNav} = require('fullpage-react');
 
@@ -70,8 +71,9 @@ class FullpageReact extends React.Component {
         </TopNav>
 
         <Slide style={{backgroundColor: '#FF574F'}}>
+          <AboutMe />
         </Slide>
-        <Slide style={{backgroundColor: '#D7A069'}}></Slide>
+        <Slide style={{backgroundColor: 'rgb(235, 197, 159)'}}></Slide>
         <Slide style={{backgroundColor: '#9F9B9F'}}></Slide>
         <Slide style={{backgroundColor: '#FFBBB8'}}></Slide>
         <Slide style={{backgroundColor: '#2B2C28'}}></Slide>
