@@ -5,14 +5,20 @@ class VideoDetail extends Component {
   render() {
 
       if (!this.props.video) {
-        return <div className="col-sm-6">Select a Video</div>
+        return (
+          <div className="col-sm-6 television">
+            <h3 className="select-a-video">Please Select a Video</h3>
+          </div>
+        );
       }
 
       return (
-        <div className="col-sm-6">
-          <iframe width="560" height="315" src={this.props.video.source} frameborder="0" allowfullscreen></iframe>
-          <div>{this.props.video.title}</div>
-        </div>
+
+          <div className="col-sm-6 television">
+            <iframe width="630" height="355" src={this.props.video.source} frameborder="0" allowfullscreen></iframe>
+          </div>
+
+
       );
 
   }

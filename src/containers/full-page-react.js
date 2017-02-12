@@ -73,9 +73,9 @@ class FullpageReact extends React.Component {
         <Slide style={{backgroundColor: '#FF574F'}}>
           <AboutMe />
         </Slide>
-        <Slide style={{backgroundColor: 'rgb(235, 197, 159)'}}></Slide>
-        <Slide style={{backgroundColor: '#9F9B9F'}}></Slide>
-        <Slide style={{backgroundColor: '#FFBBB8'}}></Slide>
+        <Slide style={{backgroundColor: 'rgb(242, 148, 132)'}}></Slide>
+        <Slide style={{backgroundColor: '#ABE28D'}}></Slide>
+        <Slide style={{backgroundColor: '#c5f2ff'}}></Slide>
         <Slide style={{backgroundColor: '#2B2C28'}}></Slide>
 
         <SideNav {...sideNavOptions}>

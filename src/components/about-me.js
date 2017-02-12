@@ -13,7 +13,8 @@ export default class AboutMe extends Component {
             <p>Full-Stack Web Developer,<br />
             Graphic Designer & Video Editor.<br />
             -<br />
-            After 4 years of serving dry frozen meals at 40,000 feet, I decided to learn how to code.<br /><br />
+            After 4 years of serving dry frozen meals at 40,000 feet, I decided to learn how to code.<br />
+            I think I will keep my feet on the ground for a while ;)
             </p>
           </div>
         </div>

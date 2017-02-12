@@ -2,17 +2,30 @@
 
 iframe {
   border: none;
+  padding-top:15px;
+
 }
 
 section {
   height: 100vh;
 }
 
-p, .btn a {
-  font-family: 'Karla', sans-serif;
+.text-link {
+  color: #ff574f;
+  text-decoration: none;
 }
 
-h3 {
+.text-link:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+p, .btn a {
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+}
+
+h3, h4 {
   font-family: 'Bree Serif', serif;
 }
 
@@ -22,6 +35,11 @@ h3 {
 
 .btn {
   background-color: #ff574f !important;
+  transition: .5s ease;
+}
+
+.other {
+  background-color: #302729 !important;
   transition: .5s ease;
 }
 
@@ -55,6 +73,7 @@ h3 {
   padding-top: 20px !important;
   font-family: 'Inconsolata', monospace;
   font-size: 20px;
+  color: white;
 }
 
 /* About Me Section */
@@ -218,11 +237,12 @@ li {
 /* Video */
 
 .video {
-  padding-top: 120px;
+  padding-top: 100px;
+  /*text-align: center;*/
 }
 
 .video-list-item {
-  text-align: center;
+  /*text-align: center;*/
   font-family: 'Karla', sans-serif;
   font-size: 20px;
 }
@@ -230,4 +250,59 @@ li {
 .video-list-item:hover {
   color: white;
   cursor: pointer;
+}
+
+.television {
+  background-image: url("https://dl.dropboxusercontent.com/u/80500150/tv-850191_960_720.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:480px;
+  margin-left: 60px;
+}
+
+.video .btn {
+  display: block;
+  margin-left: 50px !important;
+}
+
+.video ul {
+  margin-left: 40px;
+}
+
+.video-text {
+  width: 80%;
+  display: block;
+  margin: auto !important;
+  text-align: center;
+}
+
+.select-a-video {
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  font-family: 'Karla', sans-serif;
+}
+
+/*Design */
+
+.coming-soon {
+  margin-top: 300px;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Contact */
+
+.contact-details {
+  text-align: center;
+  margin: auto;
+  margin-top: 300px;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+}
+
+.contact-details p {
+  font-size: 20px !important;
+  font-family: 'Inconsolata', monospace;
 }

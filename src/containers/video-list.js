@@ -10,8 +10,8 @@ class VideoList extends Component {
         <li
           key={video.title}
           onClick={() => this.props.selectVideo(video)}
-          className="video-list-item">
-          {video.title}
+          className="btn other padded">
+          <a>{video.title}</a>
         </li>
       );
     });
@@ -19,7 +19,7 @@ class VideoList extends Component {
 
     render() {
       return (
-        <div className="col-sm-5">
+        <div className="col-sm-4">
           <ul>
             {this.renderList()}
           </ul>
