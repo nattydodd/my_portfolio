@@ -16,7 +16,7 @@ class WebsiteDetail extends Component {
                     </div>
                     <div>
                       <button className="btn padded">
-                      <a href="http://www.show-us-your-canada.herokuapp.com" target="_blank">
+                      <a href="https://muskoka-contest.herokuapp.com/" target="_blank">
                       View Live Site</a></button>
                     </div>
                   </div>

@@ -8,7 +8,7 @@ export default function() {
       { title: 'Share Your Canada',
         url:"https://dl.dropboxusercontent.com/u/80500150/comp2.png",
         description:"Show Us Your Canada is an online contest and marketing strategy to promote tourism in the Muskoka Region of Canada. It target expats living abroad, and allows them to upload photos and stories depicting their favourite Muskoka memories. I created this app using Rails and JQuery to allow the users to add Instagram-like filters to their submissions. Users can vote, and each vote is verified using an email verification system as well validated by unique IP address. Submissions are also shareable via Instagram and Twitter.",
-        link: "http://show-us-your-canada.herokuapp.com"
+        link: "https://muskoka-contest.herokuapp.com/"
       },
       { title: 'Financial Advice for All',
         url:"https://dl.dropboxusercontent.com/u/80500150/comp3.png",
