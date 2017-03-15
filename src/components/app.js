@@ -14,6 +14,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="container-fluid page-wrapper">
+      <img id="njd_logo" src="http://i.imgur.com/5I894FI.png" alt="logo"/>
         <FullpageReact />
         <section>
           <div className="row website">
@@ -36,7 +37,7 @@ export default class App extends Component {
         <section>
           <div className="row">
             <Contact />
-          </div>  
+          </div>
         </section>
       </div>
     );

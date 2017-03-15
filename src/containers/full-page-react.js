@@ -2,21 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import AboutMe from '../components/about-me';
 
-const {Fullpage, Slide, TopNav, SideNav} = require('fullpage-react');
+const {Fullpage, Slide, SideNav} = require('fullpage-react');
 
-let topNavOptions = {
-  footer: false, //topNav can double as a footer if true
-  align: 'center', //also supports center and right alignment
-
-  //styles to apply to children
-  activeStyles: {backgroundColor: 'white'},
-  hoverStyles: {backgroundColor: 'yellow'},
-  nonActiveStyles: {backgroundColor: 'gray'}
-};
 
 let sideNavOptions = {
-  right: '2%', //left alignment is default
-  top: '50%', //top is 50% by default
+  right: '5%', //left alignment is default
+  top: '40%', //top is 50% by default
 
   //styles to apply to children
   activeStyles: {color: 'white'},
@@ -27,18 +18,33 @@ let sideNavOptions = {
 class FullpageReact extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {active: 0};
+    this.state = {
+      active: 0,
+      navToggle: 'close',
+      selected: []
+    };
 
     this.updateActiveState = this.updateActiveState.bind(this);
+
   }
+
 
   updateActiveState(newActive) {
     this.setState({'active': newActive});
   }
 
+  toggleNav(value) {
+    this.setState({navToggle: value });
+  }
+
+  strikeOut(item) {
+    console.log(item)
+    this.setState({ selected: [item, ...this.state.selected] })
+  }
+
   shouldComponentUpdate(nP, nS) {
     //ensure hoverStyles and activeStyles update
-    return nS.active != this.state.active;
+    return nS.active != this.state.active || nS.navToggle != this.state.navToggle;
   }
 
   onMouseOver(idx) {
@@ -53,10 +59,11 @@ class FullpageReact extends React.Component {
     return idx == this.state.active ? component.activeStyles : idx == this.state.hover ? component.hoverStyles : component.nonActiveStyles
   }
 
+
   render() {
     let navCount = 5;
     // let navArr = [];
-    let navArr = ["About Me", "Web", "Design", "Video", "Contact"];
+    let navArr = ["About", "Financial Advice for All", "Show Us Your Canada", "Ripe Find", "PackApp", "The Human Network", "Road Map Generator"];
     // for (let i = 0; i < navCount; i++) {
     //   navArr.push(i);
     // }
@@ -64,13 +71,7 @@ class FullpageReact extends React.Component {
     return (
       <Fullpage active={this.updateActiveState}>
 
-        <TopNav {...topNavOptions}>
-          {navArr.map((n, idx) => {
-            return <span key={idx} ref={idx} className="topnav-items">{navArr[idx]}</span>
-          }, this)}
-        </TopNav>
-
-        <Slide style={{backgroundColor: '#FF574F'}}>
+        <Slide style={{backgroundColor: 'rgb(245, 179, 179)'}}>
           <AboutMe />
         </Slide>
         <Slide style={{backgroundColor: 'rgb(242, 148, 132)'}}></Slide>
@@ -78,11 +79,18 @@ class FullpageReact extends React.Component {
         <Slide style={{backgroundColor: '#c5f2ff'}}></Slide>
         <Slide style={{backgroundColor: '#2B2C28'}}></Slide>
 
-        <SideNav {...sideNavOptions}>
-          {navArr.map((n, idx) => {
-            return <div key={idx} ref={idx}>&#x25CF;</div>
-          }, this)}
-        </SideNav>
+        <h1 className={`close-nav ${this.state.navToggle === "open" ? 'visible' : 'invisible' }`} onClick={() => this.toggleNav("close")}>X</h1>
+        <h1 className={`open-nav ${this.state.navToggle === "close" ? 'visible' : 'invisible' }`}  onClick={() => this.toggleNav("open")}>Menu</h1>
+
+        <div className={this.state.navToggle === "open" ? 'sideNavOpen' : 'sideNavClosed'}>
+          <div className={`nav-contents-container ${this.state.navToggle === "open" ? '' : 'contents-closed' }`}>
+            <SideNav {...sideNavOptions}>
+              {navArr.map((n, idx) => {
+                return <div key={idx} ref={idx} className={this.state.selected.includes(navArr[idx]) ? 'selected' : ''} onClick={() => this.strikeOut(navArr[idx])}>{navArr[idx]}</div>
+              }, this)}
+            </SideNav>
+          </div>
+        </div>
 
       </Fullpage>
     );

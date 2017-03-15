@@ -6,6 +6,113 @@ iframe {
 
 }
 
+.sideNavOpen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  width: 40%;
+  -moz-transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background: white;
+}
+
+.sideNavClosed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:0%;
+  overflow: auto;
+  -moz-transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background: white;
+}
+
+.sideNav {
+  position: relative !important;
+  right: 0% !important;
+  padding-left: 25px !important;
+  font-family: 'Bree Serif', serif;
+  font-size: 22px;
+}
+
+.Tappable-inactive div {
+  padding: 8px 0;
+  min-width: 600px;
+}
+
+.Tappable-active div {
+  padding: 8px 0;
+  min-width: 600px;
+}
+
+.selected {
+  text-decoration: line-through;
+}
+
+.close-nav {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  z-index: 6;
+  margin-top: 10px;
+}
+
+.close-nav:hover {
+  cursor: pointer;
+}
+
+.open-nav {
+  position: absolute;
+  top: 1%;
+  right: 4%;
+  z-index: 5;
+  margin-top: 10px;
+}
+
+.open-nav:hover {
+  cursor: pointer;
+}
+
+.visible {
+  opacity: 1;
+  -moz-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.invisible {
+  opacity: 0;
+  -moz-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav-contents-container {
+  opacity: 1;
+  height:100vh;
+  -moz-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.contents-closed {
+  opacity: 0;
+  -moz-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
 section {
   height: 100vh;
 }
@@ -76,22 +183,35 @@ h3, h4 {
   color: white;
 }
 
+#njd_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* About Me Section */
 
 .about-me {
-  text-align: center;
   padding-top: 120px;
 }
 
+.main-icons {
+  padding-top: 120px;
+}
+
+.main-icon {
+  margin: 30px;
+}
+
 .about-me h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-family: 'Bree Serif', serif;
 }
 
 .about-me img {
-  max-width: 250px;
-  padding: 10px;
+  max-width: 200px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .about-me-text {
@@ -99,6 +219,7 @@ h3, h4 {
   display: block;
   float: none !important;
   font-size: 18px;
+  margin-left: 15px;
 }
 
 .skills {
