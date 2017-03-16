@@ -14,8 +14,8 @@ export default class AboutMe extends Component {
               <h4>Full-Stack Web Developer,<br />
               Graphic Designer & Video Editor.<br /></h4>
               -<br />
-              <p>After 4 years of serving dry frozen meals at 40,000 feet, I decided to learn how to code.<br />
-              I think I will keep my feet on the ground for a while ;)
+              <p>After 4 years of serving dry frozen meals at 40,000 feet, I decided to learn how to code.<br /><br />
+              I currently live and work near Frankfurt, Germany.
               </p>
               <img className="animated fadeInDown" src="http://i.imgur.com/InHscVn.png" />
             </div>

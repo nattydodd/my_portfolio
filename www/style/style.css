@@ -141,7 +141,7 @@ h3, h4 {
 }
 
 .btn {
-  background-color: #ff574f !important;
+  background-color: #ff2fcb !important;
   transition: .5s ease;
 }
 
@@ -156,14 +156,14 @@ h3, h4 {
 }
 
 .btn:hover a {
-  color: #ff574f !important;
+  color: #ff2fcb !important;
   text-decoration: none;
 }
 
 .btn a:hover {
   text-decoration: none;
   cursor: pointer;
-  color: #ff574f  !important;
+  color: #ff2fcb  !important;
   transition: .5s ease;
 }
 
@@ -367,12 +367,18 @@ li {
 }
 
 
-.padded {
-  margin: 20px;
-}
 
 .description {
   font-size: 14px;
+  margin: 10px;
+}
+
+.description h1 {
+  font-family: 'Bree Serif', serif;
+}
+
+.text-white {
+  color: white;
 }
 
 /* Video */
@@ -446,4 +452,10 @@ li {
 .contact-details p {
   font-size: 20px !important;
   font-family: 'Inconsolata', monospace;
+}
+
+/* financial advice */
+
+.movie-box {
+  height: 400px;
 }

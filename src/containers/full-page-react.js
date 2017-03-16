@@ -80,22 +80,22 @@ class FullpageReact extends React.Component {
         <Slide style={{backgroundColor: 'rgb(245, 179, 179)'}}>
           <AboutMe />
         </Slide>
-        <Slide style={{backgroundColor: 'grey'}}>
+        <Slide style={{backgroundColor: 'rgb(237, 237, 237)'}}>
           <FinancialAdvice />
         </Slide>
-        <Slide style={{backgroundColor: '#ABE28D'}}>
+        <Slide style={{backgroundColor: 'rgb(219, 239, 234)'}}>
           <Muskoka />
         </Slide>
-        <Slide style={{backgroundColor: '#c5f2ff'}}>
+        <Slide style={{backgroundColor: 'rgb(255, 231, 249)'}}>
           <RipeFind />
         </Slide>
-        <Slide style={{backgroundColor: '#2B2C28'}}>
+        <Slide style={{backgroundColor: 'rgb(254, 253, 209)'}}>
           <PackApp />
         </Slide>
-        <Slide style={{backgroundColor: '#2B2C28'}}>
+        <Slide style={{backgroundColor: 'rgb(210, 255, 227)'}}>
           <HumanNetwork />
         </Slide>
-        <Slide style={{backgroundColor: '#2B2C28'}}>
+        <Slide style={{backgroundColor: 'rgb(255, 231, 231)'}}>
           <RoadMap />
         </Slide>
 
