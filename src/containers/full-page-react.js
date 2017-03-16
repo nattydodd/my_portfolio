@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import AboutMe from '../components/about-me';
+import FinancialAdvice from '../components/financial_advice';
+import Muskoka from '../components/muskoka';
+import RipeFind from '../components/ripe_find';
+import PackApp from '../components/packapp';
+import HumanNetwork from '../components/human_network';
+import RoadMap from '../components/roadmap';
 
 const {Fullpage, Slide, SideNav} = require('fullpage-react');
 
@@ -61,7 +67,7 @@ class FullpageReact extends React.Component {
 
 
   render() {
-    let navCount = 5;
+    let navCount = 7;
     // let navArr = [];
     let navArr = ["About", "Financial Advice for All", "Show Us Your Canada", "Ripe Find", "PackApp", "The Human Network", "Road Map Generator"];
     // for (let i = 0; i < navCount; i++) {
@@ -74,13 +80,27 @@ class FullpageReact extends React.Component {
         <Slide style={{backgroundColor: 'rgb(245, 179, 179)'}}>
           <AboutMe />
         </Slide>
-        <Slide style={{backgroundColor: 'rgb(242, 148, 132)'}}></Slide>
-        <Slide style={{backgroundColor: '#ABE28D'}}></Slide>
-        <Slide style={{backgroundColor: '#c5f2ff'}}></Slide>
-        <Slide style={{backgroundColor: '#2B2C28'}}></Slide>
+        <Slide style={{backgroundColor: 'grey'}}>
+          <FinancialAdvice />
+        </Slide>
+        <Slide style={{backgroundColor: '#ABE28D'}}>
+          <Muskoka />
+        </Slide>
+        <Slide style={{backgroundColor: '#c5f2ff'}}>
+          <RipeFind />
+        </Slide>
+        <Slide style={{backgroundColor: '#2B2C28'}}>
+          <PackApp />
+        </Slide>
+        <Slide style={{backgroundColor: '#2B2C28'}}>
+          <HumanNetwork />
+        </Slide>
+        <Slide style={{backgroundColor: '#2B2C28'}}>
+          <RoadMap />
+        </Slide>
 
         <h1 className={`close-nav ${this.state.navToggle === "open" ? 'visible' : 'invisible' }`} onClick={() => this.toggleNav("close")}>X</h1>
-        <h1 className={`open-nav ${this.state.navToggle === "close" ? 'visible' : 'invisible' }`}  onClick={() => this.toggleNav("open")}>Menu</h1>
+        <h1 className={`open-nav ${this.state.navToggle === "close" ? 'visible' : 'invisible' }`}  onClick={() => this.toggleNav("open")}><i className="fa fa-list" aria-hidden="true"></i></h1>
 
         <div className={this.state.navToggle === "open" ? 'sideNavOpen' : 'sideNavClosed'}>
           <div className={`nav-contents-container ${this.state.navToggle === "open" ? '' : 'contents-closed' }`}>

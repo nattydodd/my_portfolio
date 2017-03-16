@@ -14,31 +14,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="container-fluid page-wrapper">
-      <img id="njd_logo" src="http://i.imgur.com/5I894FI.png" alt="logo"/>
+        <img id="njd_logo" src="http://i.imgur.com/5I894FI.png" alt="logo"/>
         <FullpageReact />
-        <section>
-          <div className="row website">
-            <WebsiteDetail />
-            <WebsiteList />
-          </div>
-        </section>
-        <section>
-          <DesignList />
-        </section>
-        <section>
-          <div className="row video">
-            <VideoList />
-            <VideoDetail />
-          </div>
-          <div className="row video-text">
-            <VideosText />
-          </div>
-        </section>
-        <section>
-          <div className="row">
-            <Contact />
-          </div>
-        </section>
       </div>
     );
   }

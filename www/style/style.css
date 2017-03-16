@@ -7,7 +7,7 @@ iframe {
 }
 
 .sideNavOpen {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   overflow: auto;
@@ -20,7 +20,7 @@ iframe {
 }
 
 .sideNavClosed {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width:0%;
@@ -189,19 +189,39 @@ h3, h4 {
   left: 0;
 }
 
+.fa-list {
+  padding-top: 15px !important;
+}
+
+.fa-list:hover {
+  color: white !important;
+}
+
 /* About Me Section */
 
 .about-me {
-  padding-top: 120px;
+  padding-top: 90px;
+  padding-left: 65px !important;
 }
 
 .main-icons {
-  padding-top: 120px;
+  padding-top: 70px;
+}
+
+
+.icon-link-text {
+
+}
+
+.fa-long-arrow-right {
+  font-size: 25px !important;
+  color: #ff2fcb !important;
 }
 
 .main-icon {
   margin: 30px;
 }
+
 
 .about-me h1 {
   font-size: 55px;

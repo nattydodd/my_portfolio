@@ -25,16 +25,24 @@ export default class AboutMe extends Component {
 
         <div className="col-xs-4 col-xs-offset-3 main-icons">
           <div className="main-icon">
+            <i className="fa fa-long-arrow-right animated fadeInLeft" aria-hidden="true"></i>
             <a href="http://www.linkedin.com/in/nataliedodd89" target="_blank"><img src="http://i.imgur.com/BjrKE7i.png" /></a>
+            <p className="icon-link-text">/in/nataliedodd89</p>
           </div>
           <div className="main-icon">
+            <i className="fa fa-long-arrow-right animated fadeInLeft" aria-hidden="true"></i>
             <a href="mailto:nataliedodd89@gmail.com"><img src="http://i.imgur.com/2FQxC2y.png" /></a>
+            <p className="icon-link-text">nataliedodd89@gmail.com</p>
           </div>
           <div className="main-icon">
+            <i className="fa fa-long-arrow-right animated fadeInLeft" aria-hidden="true"></i>
             <a href="http://www.github.com/nattydodd" target="_blank"><img src="http://i.imgur.com/StmSUUk.png" /></a>
+            <p className="icon-link-text">/nattydodd</p>
           </div>
           <div className="main-icon">
+            <i className="fa fa-long-arrow-right animated fadeInLeft" aria-hidden="true"></i>
             <a href="http://www.nattycodes.com" target="_blank"><img src="http://i.imgur.com/7F1bRiI.png" /></a>
+            <p className="icon-link-text">nattycodes.com</p>
           </div>
         </div>
       </div>
