@@ -200,7 +200,7 @@ h3, h4 {
 /* About Me Section */
 
 .about-me {
-  padding-top: 90px;
+  padding-top: 60px;
   padding-left: 65px !important;
 }
 
@@ -228,6 +228,10 @@ h3, h4 {
   font-family: 'Bree Serif', serif;
 }
 
+.about-me h3 {
+  font-family: 'Bree Serif', serif;
+}
+
 .about-me img {
   max-width: 200px;
   margin-bottom: 20px;
@@ -240,6 +244,7 @@ h3, h4 {
   float: none !important;
   font-size: 18px;
   margin-left: 15px;
+  font-family: 'Bree Serif', serif;
 }
 
 .skills {
@@ -462,12 +467,17 @@ li {
 
 /*All*/
 
-.stack-box {
-
+.movie-box img {
+  max-height: 350px;
 }
 
 .fa-tag {
   padding-right: 10px !important;
   font-size: 20px !important;
   color: #ff5656 !important;
+}
+
+.stack-half {
+  display: inline-block;
+  margin-right: 25px;
 }
