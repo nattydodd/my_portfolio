@@ -457,5 +457,17 @@ li {
 /* financial advice */
 
 .movie-box {
-  height: 400px;
+  height: 300px;
+}
+
+/*All*/
+
+.stack-box {
+
+}
+
+.fa-tag {
+  padding-right: 10px !important;
+  font-size: 20px !important;
+  color: #ff5656 !important;
 }
