@@ -175,7 +175,12 @@ h3, h4 {
 
 .page-wrapper {
   padding: 0 !important;
+  overflow-x: hidden;
 }
+
+/*.Fullpage {
+  overflow: hidden;
+}*/
 
 .topnav-items {
   padding: 20px;
@@ -503,7 +508,6 @@ li {
 #ripe-image {
   width: 100%;
   height: auto !important;
-  border: 5px solid #e8e6e6;
 }
 
 
@@ -512,7 +516,6 @@ li {
   margin: 10px;
   background: rgb(255, 231, 249);
   width: 60% !important;
-  border-top: 5px solid #e8e6e6;
   margin-left: 0;
 }
 
@@ -525,7 +528,6 @@ li {
 #road-image {
   width: 100%;
   height: auto !important;
-  border: 5px solid #e8e6e6;
 }
 
 .description-road {
@@ -534,7 +536,6 @@ li {
   background: rgb(255, 231, 231);
   width: 60% !important;
   padding-top: 20px;
-  border-top: 5px solid #e8e6e6;
   margin-left: 0;
 }
 

@@ -5,7 +5,7 @@ export default class RoadMap extends Component {
     return (
       <div>
         <div className="movie-box">
-            <iframe width="100%" height="330" src="https://www.youtube.com/embed/_DKIJ-O1_z8?autoplay=0&loop=1&playlist=_DKIJ-O1_z8" frameBorder="0" allowFullScreen></iframe>
+            <iframe width="100%" style={{border: "12px solid rgb(255, 231, 231)"}} height="330" src="https://www.youtube.com/embed/_DKIJ-O1_z8?autoplay=0&loop=1&playlist=_DKIJ-O1_z8" frameBorder="0" allowFullScreen></iframe>
         </div>
         <div className="col-xs-11 col-md-7 description-road">
           <div className="stack-box">

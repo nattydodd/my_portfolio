@@ -42,6 +42,10 @@ class FullpageReact extends React.Component {
 
   toggleNav(value) {
     this.setState({navToggle: value });
+
+    var fullPage = document.getElementByClass("Fullpage");
+
+    fullPage.setAttribute("style", "overflow: visible");
   }
 
   strikeOut(item) {
@@ -93,7 +97,7 @@ class FullpageReact extends React.Component {
         <Slide style={{backgroundColor: 'rgb(237, 237, 237)'}}>
           <FinancialAdvice />
         </Slide>
-        <Slide style={{backgroundColor: 'rgb(219, 239, 234)'}}>
+        <Slide style={{backgroundColor: 'rgb(196, 255, 240)'}}>
           <Muskoka />
         </Slide>
         <Slide style={{backgroundColor: 'rgb(255, 231, 249)'}}>
