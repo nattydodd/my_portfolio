@@ -21,6 +21,7 @@ let sideNavOptions = {
   nonActiveStyles: {color: 'gray'}
 };
 
+
 class FullpageReact extends React.Component {
   constructor(props) {
     super(props)
@@ -74,6 +75,15 @@ class FullpageReact extends React.Component {
     //   navArr.push(i);
     // }
 
+    let styleVisible = {
+      overflow: 'visible'
+    }
+
+    let styleHidden = {
+      overflow: 'hidden'
+    }
+
+
     return (
       <Fullpage active={this.updateActiveState}>
 
@@ -100,7 +110,7 @@ class FullpageReact extends React.Component {
         </Slide>
 
         <h1 className={`close-nav ${this.state.navToggle === "open" ? 'visible' : 'invisible' }`} onClick={() => this.toggleNav("close")}>X</h1>
-        <h1 className={`open-nav ${this.state.navToggle === "close" ? 'visible' : 'invisible' }`}  onClick={() => this.toggleNav("open")}><i className="fa fa-list" aria-hidden="true"></i></h1>
+        <h1 className={`open-nav animated infinite bounce ${this.state.navToggle === "close" ? 'visible' : 'invisible' }`}  onClick={() => this.toggleNav("open")}><i className="fa fa-list" aria-hidden="true"></i></h1>
 
         <div className={this.state.navToggle === "open" ? 'sideNavOpen' : 'sideNavClosed'}>
           <div className={`nav-contents-container ${this.state.navToggle === "open" ? '' : 'contents-closed' }`}>
