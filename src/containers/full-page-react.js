@@ -43,9 +43,6 @@ class FullpageReact extends React.Component {
   toggleNav(value) {
     this.setState({navToggle: value });
 
-    var fullPage = document.getElementByClass("Fullpage");
-
-    fullPage.setAttribute("style", "overflow: visible");
   }
 
   strikeOut(item) {

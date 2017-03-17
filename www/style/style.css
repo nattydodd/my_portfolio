@@ -21,7 +21,7 @@ a {
   -o-transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background: white;
+  background: #5d4d4d;
 }
 
 .sideNavClosed {
@@ -43,6 +43,7 @@ a {
   padding-left: 25px !important;
   font-family: 'Bree Serif', serif;
   font-size: 22px;
+  color: white;
 }
 
 .Tappable-inactive div {
@@ -65,6 +66,7 @@ a {
   right: 2%;
   z-index: 6;
   margin-top: 10px;
+  color: #bdbdbd;
 }
 
 .close-nav:hover {
@@ -489,7 +491,7 @@ li {
 .fa-tag {
   padding-right: 10px !important;
   font-size: 20px !important;
-  color: #ff5656 !important;
+  color: #ff2fcb !important;
 }
 
 .stack-half {
