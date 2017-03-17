@@ -5,9 +5,9 @@ export default class Muskoka extends Component {
     return (
       <div>
         <div className="movie-box">
-          <iframe width="100%" height="330" src="https://www.youtube.com/embed/6qz3CsQBoA8?autoplay=1&loop=1&playlist=6qz3CsQBoA8" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="330" src="https://www.youtube.com/embed/6qz3CsQBoA8?autoplay=1&loop=1&playlist=6qz3CsQBoA8" frameBorder="0" allowFullScreen></iframe>
         </div>
-        <div className="col-xs-7 description">
+        <div className="col-xs-11 col-md-7 description">
           <div className="stack-box">
           <span className="stack-half">
             <h5>

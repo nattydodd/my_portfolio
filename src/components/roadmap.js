@@ -5,9 +5,9 @@ export default class RoadMap extends Component {
     return (
       <div>
         <div className="movie-box">
-            <iframe width="100%" height="330" src="https://www.youtube.com/embed/_DKIJ-O1_z8?autoplay=1&loop=1&playlist=_DKIJ-O1_z8" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="330" src="https://www.youtube.com/embed/_DKIJ-O1_z8?autoplay=1&loop=1&playlist=_DKIJ-O1_z8" frameBorder="0" allowFullScreen></iframe>
         </div>
-        <div className="col-xs-7 description-road">
+        <div className="col-xs-11 col-md-7 description-road">
           <div className="stack-box">
           <span className="stack-half-road">
             <h5>
@@ -19,14 +19,8 @@ export default class RoadMap extends Component {
           <span className="stack-half-road">
             <h5>
               <i className="fa fa-tag animated fadeInLeft" aria-hidden="true"></i>jQuery<br />
-              <i className="fa fa-tag animated fadeInLeft" aria-hidden="true"></i>HTML5<br />
-              <i className="fa fa-tag animated fadeInLeft" aria-hidden="true"></i>CSS3
-            </h5>
-          </span>
-          <span className="stack-half-road">
-            <h5>
-              <i className="fa fa-tag animated fadeInLeft" aria-hidden="true"></i>Accessibility Standards<br />
-              <i className="fa fa-tag animated fadeInLeft" aria-hidden="true"></i>Nationbuilder<br />
+              <i className="fa fa-tag animated fadeInLeft" aria-hidden="true"></i>Accessibility<br />
+              <i className="fa fa-tag animated fadeInLeft" aria-hidden="true"></i>Nationbuilder
             </h5>
           </span>
           </div>

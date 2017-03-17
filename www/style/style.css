@@ -515,6 +515,10 @@ li {
   margin-left: 0;
 }
 
+.description-ripe h1 {
+  font-family: 'Bree Serif', serif;
+}
+
 /* road closure */
 
 #road-image {
@@ -531,6 +535,10 @@ li {
   padding-top: 20px;
   border-top: 5px solid #e8e6e6;
   margin-left: 0;
+}
+
+.description-road h1 {
+  font-family: 'Bree Serif', serif;
 }
 
 @media (max-width: 767px) {
@@ -562,5 +570,48 @@ li {
 @media (max-width: 450px) {
   .about-me img {
     display: none;
+  }
+}
+
+@media (max-width: 923px) {
+  .open-nav {
+    display: none;
+  }
+  .close-nav {
+    display: none;
+  }
+  .movie-box {
+    width: 100%;
+  }
+  .description-ripe {
+    width: 100% !important;
+  }
+
+  .description-road {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 585px) {
+  iframe {
+    height: 250px;
+  }
+  .movie-box {
+    height: 250px;
+  }
+}
+
+@media (max-width: 485px) {
+  .description h1 {
+    font-size: 30px;
+  }
+  .description p {
+    font-size: 13px;
+  }
+  .description-road p, .description-ripe p {
+    font-size: 13px;
+  }
+  .description-road h1, .description-ripe h1 {
+    font-size: 30px;
   }
 }

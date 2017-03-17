@@ -5,9 +5,9 @@ export default class HumanNetwork extends Component {
     return (
       <div>
         <div className="movie-box">
-          <iframe width="100%" height="330" src="https://www.youtube.com/embed/QLyprueG8AI?autoplay=1&loop=1&playlist=QLyprueG8AI" frameborder="0" allowfullscreen></iframe>
+          <iframe width="100%" height="330" src="https://www.youtube.com/embed/QLyprueG8AI?autoplay=1&loop=1&playlist=QLyprueG8AI" frameBorder="0" allowFullScreen></iframe>
         </div>
-        <div className="col-xs-7 description">
+        <div className="col-xs-11 col-md-7 description">
           <div className="stack-box">
           <span className="stack-half">
             <h5>
