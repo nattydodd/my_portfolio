@@ -6,7 +6,7 @@ export default class PackApp extends Component {
     return (
       <div>
         <div className="movie-box">
-          <img src="http://i.imgur.com/b2blzne.png" />
+          <iframe width="100%" height="330" src="https://www.youtube.com/embed/e2UDktUzy7U?autoplay=1&loop=1&playlist=e2UDktUzy7U" frameborder="0"></iframe>
         </div>
 
         <div className="col-xs-7 description">

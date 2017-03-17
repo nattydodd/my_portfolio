@@ -2,8 +2,12 @@
 
 iframe {
   border: none;
-  padding-top:15px;
 
+}
+
+a {
+   color: #ff2fcb !important;
+   text-decoration: none !important;
 }
 
 .sideNavOpen {
@@ -378,6 +382,7 @@ li {
   margin: 10px;
 }
 
+
 .description h1 {
   font-family: 'Bree Serif', serif;
 }
@@ -463,13 +468,17 @@ li {
 
 .movie-box {
   height: 300px;
+  width:60%;
+}
+
+/*PackApp*/
+
+.ytp-autohide {
+  background-color: #ffb098 !important;
 }
 
 /*All*/
 
-.movie-box img {
-  max-height: 350px;
-}
 
 .fa-tag {
   padding-right: 10px !important;
@@ -480,4 +489,78 @@ li {
 .stack-half {
   display: inline-block;
   margin-right: 25px;
+  margin-top: 25px;
+}
+
+.stack-half-road {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+/* Ripe Find */
+
+#ripe-image {
+  width: 100%;
+  height: auto !important;
+  border: 5px solid #e8e6e6;
+}
+
+
+.description-ripe {
+  font-size: 14px;
+  margin: 10px;
+  background: rgb(255, 231, 249);
+  width: 60% !important;
+  border-top: 5px solid #e8e6e6;
+  margin-left: 0;
+}
+
+/* road closure */
+
+#road-image {
+  width: 100%;
+  height: auto !important;
+  border: 5px solid #e8e6e6;
+}
+
+.description-road {
+  font-size: 14px;
+  margin: 10px;
+  background: rgb(255, 231, 231);
+  width: 60% !important;
+  padding-top: 20px;
+  border-top: 5px solid #e8e6e6;
+  margin-left: 0;
+}
+
+@media (max-width: 767px) {
+  .main-icon {
+     display: inline-block;
+     margin: 0;
+  }
+  .fa-long-arrow-right {
+    display: none !important;
+  }
+  .icon-link-text {
+    display: none;
+  }
+  .main-icons {
+     padding-top: 0px;
+     text-align: center;
+  }
+  .about-me {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 665px) {
+  .about-me img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about-me img {
+    display: none;
+  }
 }

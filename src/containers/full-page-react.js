@@ -77,7 +77,7 @@ class FullpageReact extends React.Component {
     return (
       <Fullpage active={this.updateActiveState}>
 
-        <Slide style={{backgroundColor: 'rgb(245, 179, 179)'}}>
+        <Slide style={{backgroundColor: 'rgb(255, 174, 174)'}}>
           <AboutMe />
         </Slide>
         <Slide style={{backgroundColor: 'rgb(237, 237, 237)'}}>

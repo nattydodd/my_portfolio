@@ -5,6 +5,7 @@ export default class FinancialAdvice extends Component {
     return (
       <div>
         <div className="movie-box">
+          <iframe width="100%" height="330" src="https://www.youtube.com/embed/O6qqYkJpWyA?autoplay=1&loop=1&playlist=O6qqYkJpWyA" frameborder="0" allowfullscreen></iframe>
         </div>
         <div className="col-xs-7 description">
           <div className="stack-box">

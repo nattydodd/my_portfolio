@@ -5,8 +5,9 @@ export default class RipeFind extends Component {
     return (
       <div>
         <div className="movie-box">
+          <img id="ripe-image" src="http://i.imgur.com/knsudRQ.png" />
         </div>
-        <div className="col-xs-7 description">
+        <div className="col-xs-7 description-ripe">
           <div className="stack-box">
            <span className="stack-half">
             <h5>
@@ -25,7 +26,7 @@ export default class RipeFind extends Component {
           </div>
           <h1>Ripe Find</h1>
           <p>With the support of an experienced back-end developer, I am currently building the front-end of a complex API which helps literary agents source intellectual property, using React.js and Redux. The front-end is written in ES6 and the back end is in Python. This project has sparked my new love for React and my decision to rebuild this portfolio using React!</p>
-          <h5><em>*This website is still in production</em></h5>
+          <h4>*This website is still in production. Stay tuned for the finished product!</h4>
         </div>
       </div>
     )
