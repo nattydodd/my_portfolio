@@ -72,7 +72,7 @@ a {
 }
 
 .open-nav {
-  position: absolute;
+  position: fixed;
   top: 1%;
   right: 4%;
   z-index: 5;

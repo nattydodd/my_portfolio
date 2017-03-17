@@ -12,7 +12,7 @@ export default class AboutMe extends Component {
           <div className="row">
             <div className="about-me-text">
               <h4>Full-Stack Web Developer</h4>
-              -<br />
+              ---<br />
               <p>After 4 years of serving dry frozen meals at 40,000 feet, I decided to learn how to code. During my career progression from Flight Attendant to Web Developer I discovered one universal truth: No matter how far you explore- there is always more to learn. </p>
               <p>I also do graphic design work and produce video content. Check it out <a href="http://www.ndodd.weebly.com/portfolio" target="_blank"><strong>here</strong></a>!</p>
               <img className="animated fadeInDown" src="http://i.imgur.com/InHscVn.png" />
