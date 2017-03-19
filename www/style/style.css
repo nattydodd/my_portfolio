@@ -563,10 +563,13 @@ li {
   padding-left: 25px !important;
 }
 
-.description-ripe h1 {
+.description-ripe h1, .description-ripe h4 {
   font-family: 'Bree Serif', serif;
 }
 
+.fa-cogs {
+  padding-right: 10px;
+}
 /* road closure */
 
 #road-image {
