@@ -5,9 +5,9 @@ export default class FinancialAdvice extends Component {
     return (
       <div>
         <div className="movie-box">
-          <iframe width="100%" style={{border: "12px solid rgb(237, 237, 237)"}} height="330" src="https://www.youtube.com/embed/O6qqYkJpWyA?autoplay=0&loop=1&playlist=O6qqYkJpWyA" frameBorder="0" allowFullScreen></iframe>
+          <img src="http://i.imgur.com/PzhocmH.gif" />
         </div>
-        <div className="col-xs-11 col-md-7 description">
+        <div className="col-xs-11 col-sm-7 col-md-8 col-sm-7 description">
           <div className="stack-box">
           <span className="stack-half">
             <h5>

@@ -5,9 +5,9 @@ export default class Muskoka extends Component {
     return (
       <div>
         <div className="movie-box">
-          <iframe width="100%" height="330" style={{border: "12px solid rgb(196, 255, 240)"}} src="https://www.youtube.com/embed/6qz3CsQBoA8?autoplay=0&loop=1&playlist=6qz3CsQBoA8" frameBorder="0" allowFullScreen></iframe>
+          <img src="http://i.imgur.com/E8O2Jpv.gif" />
         </div>
-        <div className="col-xs-11 col-md-7 description">
+        <div className="col-xs-11 col-sm-7 col-md-8 description">
           <div className="stack-box">
           <span className="stack-half">
             <h5>
@@ -24,8 +24,8 @@ export default class Muskoka extends Component {
             </h5>
           </span>
           </div>
-          <h1>Show Us Your Canada</h1>
-          <p>Show Us Your Canada is an online contest and marketing strategy to promote tourism in the Muskoka Region of Canada. It target expats living abroad, and allows them to upload photos and stories depicting their favourite Muskoka memories. I created this app using Rails and JQuery to allow the users to add Instagram-like filters to their submissions. Users can vote, and each vote is verified using an email verification system as well validated by unique IP address. Submissions are also shareable via Instagram and Twitter.</p>
+          <h1>Share Your Canada</h1>
+          <p>Share Your Canada is an online contest and marketing strategy to promote tourism in the Muskoka Region of Canada. It target expats living abroad, and allows them to upload photos and stories depicting their favourite Muskoka memories. I created this app using Rails and JQuery to allow the users to add Instagram-like filters to their submissions. Users can vote, and each vote is verified using an email verification system as well validated by unique IP address. Submissions are also shareable via Instagram and Twitter.</p>
           <button className="btn padded">
             <a href="http://shareyourcanada150.ca/" target="_blank">
             View Live Site

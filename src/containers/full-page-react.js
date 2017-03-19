@@ -71,7 +71,7 @@ class FullpageReact extends React.Component {
   render() {
     let navCount = 7;
     // let navArr = [];
-    let navArr = ["About", "Financial Advice for All", "Show Us Your Canada", "Ripe Find", "PackApp", "The Human Network", "Road Map Generator"];
+    let navArr = ["About", "Financial Advice for All", "Share Your Canada", "Ripe Find", "PackApp", "The Human Network", "Road Closure Generator"];
     // for (let i = 0; i < navCount; i++) {
     //   navArr.push(i);
     // }

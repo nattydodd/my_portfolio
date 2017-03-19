@@ -6,10 +6,10 @@ export default class PackApp extends Component {
     return (
       <div>
         <div className="movie-box">
-          <iframe width="100%" height="330" style={{border: "12px solid rgb(254, 253, 209)"}} src="https://www.youtube.com/embed/e2UDktUzy7U?autoplay=0&loop=1&playlist=e2UDktUzy7U" frameBorder="0" allowFullScreen></iframe>
+          <img src="http://i.imgur.com/ZWMYSUE.gif" />
         </div>
 
-        <div className="col-xs-11 col-md-7 description">
+        <div className="col-xs-11 col-sm-7 col-md-8 description">
         <div className="stack-box">
           <span className="stack-half">
             <h5>
