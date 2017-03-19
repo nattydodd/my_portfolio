@@ -40,6 +40,7 @@ class FullpageReact extends React.Component {
     this.setState({'active': newActive});
   }
 
+
   toggleNav(value) {
     this.setState({navToggle: value });
 
@@ -56,6 +57,7 @@ class FullpageReact extends React.Component {
   }
 
   onMouseOver(idx) {
+    console.log(idx)
     this.setState({'hover': idx});
   }
 
@@ -64,8 +66,15 @@ class FullpageReact extends React.Component {
   }
 
   compareStyles(component, idx) {
+    console.log("comparing Styles")
     return idx == this.state.active ? component.activeStyles : idx == this.state.hover ? component.hoverStyles : component.nonActiveStyles
   }
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log(nextState.active)
+
+  }
+
 
 
   render() {
@@ -76,13 +85,6 @@ class FullpageReact extends React.Component {
     //   navArr.push(i);
     // }
 
-    let styleVisible = {
-      overflow: 'visible'
-    }
-
-    let styleHidden = {
-      overflow: 'hidden'
-    }
 
 
     return (
@@ -116,8 +118,9 @@ class FullpageReact extends React.Component {
         <div className={this.state.navToggle === "open" ? 'sideNavOpen' : 'sideNavClosed'}>
           <div className={`nav-contents-container ${this.state.navToggle === "open" ? '' : 'contents-closed' }`}>
             <SideNav {...sideNavOptions}>
+            
               {navArr.map((n, idx) => {
-                return <div key={idx} ref={idx} className={this.state.selected.includes(navArr[idx]) ? 'selected' : ''} onClick={() => this.strikeOut(navArr[idx])}>{navArr[idx]}</div>
+                return <div key={idx} ref={idx} style={{color: this.state.active === idx ? 'black' : ''}} className={this.state.selected.includes(navArr[idx]) ? 'selected' : ''} onClick={() => this.strikeOut(navArr[idx])}>{navArr[idx]}</div>
               }, this)}
             </SideNav>
           </div>
