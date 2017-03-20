@@ -15,7 +15,7 @@ let languageArray = [ 'HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 
 
 let sideNavOptions = {
   right: '5%', //left alignment is default
-  top: '40%', //top is 50% by default
+  top: '6%', //top is 50% by default
 
   //styles to apply to children
   activeStyles: {color: 'white'},

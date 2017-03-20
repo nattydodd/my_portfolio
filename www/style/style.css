@@ -546,16 +546,27 @@ li {
   margin-right: 25px;
 }
 
+.language-container {
+  width: 90%;
+  padding: 20px;
+}
+
 .language-style {
-  background: red;
+  background: #f74481;
   padding: 5px;
   display: inline-block;
+  border-radius: 6px;
+  margin: 5px;
+  transition: .5s ease;
 }
 
 .language-empty {
   padding:5px;
   display: inline-block;
   color: #5d4d4d;
+  border-radius: 6px;
+  margin: 5px;
+  transition: 1s ease;
 }
 
 /* Ripe Find */
