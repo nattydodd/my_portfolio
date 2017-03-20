@@ -1,7 +1,7 @@
 export default function() {
   return [
       { title: 'About',
-        languages: ['HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 'Liquid', 'Ruby', 'Rails', 'SASS', 'Github', 'ES6', 'ES2015', 'React', 'Redux', 'Docker', 'Webpack', 'Babel', 'Python', 'Accessibility Standards']
+        languages: ['HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 'Liquid', 'Ruby', 'Rails', 'SASS', 'Github', 'ES6', 'ES2015', 'React', 'Redux', 'Docker', 'Webpack', 'Babel', 'Python', 'Accessibility']
       },
       { title: 'Financial Advice for all',
         languages: ['HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 'Liquid']
@@ -19,7 +19,7 @@ export default function() {
         languages: [ 'HTML5', 'CSS3', 'Javascript', 'jQuery', 'Github' ]
       },
       { title: 'Road Closure Generator',
-        languages: [ 'HTML5', 'CSS3', 'Javascript', 'jQuery', 'Ruby', 'Rails', 'Nationbuilder', 'Liquid', 'Accessibility Standards' ]
+        languages: [ 'HTML5', 'CSS3', 'Javascript', 'jQuery', 'Ruby', 'Rails', 'Nationbuilder', 'Liquid', 'Accessibility' ]
       }
   ]
 }
