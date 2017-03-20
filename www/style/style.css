@@ -563,7 +563,7 @@ li {
 .language-empty {
   padding:5px;
   display: inline-block;
-  color: #5d4d4d;
+  color: rgba(255, 174, 174, 0.5);
   border-radius: 6px;
   margin: 5px;
   transition: 1s ease;
