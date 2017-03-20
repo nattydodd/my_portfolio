@@ -546,6 +546,18 @@ li {
   margin-right: 25px;
 }
 
+.language-style {
+  background: red;
+  padding: 5px;
+  display: inline-block;
+}
+
+.language-empty {
+  padding:5px;
+  display: inline-block;
+  color: #5d4d4d;
+}
+
 /* Ripe Find */
 
 #ripe-image {

@@ -1,5 +1,8 @@
 export default function() {
   return [
+      { title: 'About',
+        languages: ['HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 'Liquid', 'Ruby', 'Rails', 'SASS', 'Github', 'ES6', 'ES2015', 'React', 'Redux', 'Docker', 'Webpack', 'Babel', 'Python', 'Accessibility Standards']
+      },
       { title: 'Financial Advice for all',
         languages: ['HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 'Liquid']
       },

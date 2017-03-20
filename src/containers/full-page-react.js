@@ -10,6 +10,8 @@ import RoadMap from '../components/roadmap';
 
 const {Fullpage, Slide, SideNav} = require('fullpage-react');
 
+let languageArray = [ 'HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 'Liquid', 'Ruby', 'Rails', 'SASS', 'Github', 'ES6', 'ES2015', 'React', 'Redux', 'Docker', 'Webpack', 'Babel', 'Python', 'Accessibility' ]
+
 
 let sideNavOptions = {
   right: '5%', //left alignment is default
@@ -22,7 +24,7 @@ let sideNavOptions = {
 };
 
 
-class FullpageReact extends React.Component {
+class FullpageReact extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -87,6 +89,7 @@ class FullpageReact extends React.Component {
 
 
 
+
     return (
       <Fullpage active={this.updateActiveState}>
 
@@ -115,10 +118,23 @@ class FullpageReact extends React.Component {
         <h1 className={`close-nav ${this.state.navToggle === "open" ? 'visible' : 'invisible' }`} onClick={() => this.toggleNav("close")}>X</h1>
         <h1 className={`open-nav animated infinite bounce ${this.state.navToggle === "close" ? 'visible' : 'invisible' }`}  onClick={() => this.toggleNav("open")}><i className="fa fa-list" aria-hidden="true"></i></h1>
 
+
         <div className={this.state.navToggle === "open" ? 'sideNavOpen' : 'sideNavClosed'}>
           <div className={`nav-contents-container ${this.state.navToggle === "open" ? '' : 'contents-closed' }`}>
+
+          <div className="language-container">
+            {languageArray.map((lang) => {
+                if (this.props.websites[this.state.active].languages.includes(lang)) {
+                  return <span className="language-style">{lang}</span>
+                } else {
+                  return <span className="language-empty">{lang}</span>
+                }
+            })}
+
+          </div>
+
             <SideNav {...sideNavOptions}>
-            
+
               {navArr.map((n, idx) => {
                 return <div key={idx} ref={idx} style={{color: this.state.active === idx ? 'black' : ''}} className={this.state.selected.includes(navArr[idx]) ? 'selected' : ''} onClick={() => this.strikeOut(navArr[idx])}>{navArr[idx]}</div>
               }, this)}
@@ -131,4 +147,10 @@ class FullpageReact extends React.Component {
   }
 };
 
-module.exports = FullpageReact;
+function mapStateToProps(state) {
+  return {
+    websites: state.websites,
+  }
+}
+
+export default connect(mapStateToProps)(FullpageReact);
