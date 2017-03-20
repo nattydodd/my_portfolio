@@ -216,7 +216,7 @@ h3, h4 {
 }
 
 .main-icons {
-  padding-top: 50px;
+  padding-top: 85px;
 }
 
 
@@ -611,6 +611,30 @@ li {
 
 .description-road h1 {
   font-family: 'Bree Serif', serif;
+}
+
+@media (min-width: 1440px) {
+  p {
+    font-size: 27px !important;
+  }
+  h1 {
+    font-size: 64px !important;
+  }
+  h4 {
+    font-size: 32px !important;
+  }
+  .sideNav {
+    font-size: 32px;
+  }
+  .language-style, .language-empty {
+    font-size: 26px;
+  }
+  .sideNavOpen {
+    width: 35%;
+  }
+  .btn a {
+    font-size: 28px;
+  }
 }
 
 

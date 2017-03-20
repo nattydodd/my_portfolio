@@ -7,7 +7,7 @@ export default class RoadMap extends Component {
         <div className="movie-box">
           <img src="http://i.imgur.com/6ArKhSx.gif" />
         </div>
-        <div className="col-xs-11 col-sm-7 col-md-8 description-road">
+        <div className="col-xs-11 col-sm-7 col-md-8 col-lg-7 description-road">
           <div className="stack-box">
             <span className="stack-half-road">
               <h5>

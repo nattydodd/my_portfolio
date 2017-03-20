@@ -7,7 +7,7 @@ export default class Muskoka extends Component {
         <div className="movie-box">
           <img src="http://i.imgur.com/E8O2Jpv.gif" />
         </div>
-        <div className="col-xs-11 col-sm-7 col-md-8 description">
+        <div className="col-xs-11 col-sm-7 col-md-8 col-lg-7 description">
           <div className="stack-box">
           <span className="stack-half">
             <h5>

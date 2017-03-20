@@ -10,7 +10,7 @@ import RoadMap from '../components/roadmap';
 
 const {Fullpage, Slide, SideNav} = require('fullpage-react');
 
-let languageArray = [ 'HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 'Liquid', 'Ruby', 'Rails', 'SASS', 'Github', 'ES6', 'ES2015', 'React', 'Redux', 'Docker', 'Webpack', 'Babel', 'Python', 'Accessibility' ]
+let languageArray = [ 'HTML5', 'CSS3', 'Javascript', 'jQuery', 'Nationbuilder', 'Liquid', 'Ruby', 'Rails', 'SASS', 'Github', 'ES6', 'ES2015', 'React', 'Redux', 'Docker', 'Webpack', 'Babel', 'Python', 'Accessibility', 'WordPress', 'Adobe Creative Suite' ]
 
 
 let sideNavOptions = {
@@ -125,9 +125,9 @@ class FullpageReact extends Component {
           <div className="language-container">
             {languageArray.map((lang) => {
                 if (this.props.websites[this.state.active].languages.includes(lang)) {
-                  return <span className="language-style">{lang}</span>
+                  return <span key={lang} className="language-style">{lang}</span>
                 } else {
-                  return <span className="language-empty">{lang}</span>
+                  return <span key={lang} className="language-empty">{lang}</span>
                 }
             })}
 

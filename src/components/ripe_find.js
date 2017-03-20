@@ -7,7 +7,7 @@ export default class RipeFind extends Component {
         <div className="movie-box">
           <img src="http://i.imgur.com/lmSSdhK.png" />
         </div>
-        <div className="col-xs-11 col-sm-7 col-md-8 description-ripe">
+        <div className="col-xs-11 col-sm-7 col-md-8 col-lg-7 description-ripe">
           <div className="stack-box">
            <span className="stack-half">
             <h5>

@@ -7,7 +7,7 @@ export default class FinancialAdvice extends Component {
         <div className="movie-box">
           <img src="http://i.imgur.com/PzhocmH.gif" />
         </div>
-        <div className="col-xs-11 col-sm-7 col-md-8 col-sm-7 description">
+        <div className="col-xs-11 col-sm-7 col-md-8 col-lg-7 description">
           <div className="stack-box">
           <span className="stack-half">
             <h5>
